@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ATM_App
 {
-    class ATM
+    public partial class ATM
     {
         Dictionary<int, int> affordableBanknotes;
         int quantityLimit = 0;
@@ -24,6 +24,18 @@ namespace ATM_App
             }
         }
 
+        public ATM(ATM aTM)
+        {
+            affordableBanknotes = new Dictionary<int, int>(aTM.affordableBanknotes);
+            quantityLimit = aTM.quantityLimit;
+            currentAmount = aTM.currentAmount;
+            numberOfBills = aTM.numberOfBills;
+        }
 
+        public Dictionary<int,int> AffordableBanknotes
+        {
+            get => affordableBanknotes;
+            set => affordableBanknotes = value;
+        }
     }
 }

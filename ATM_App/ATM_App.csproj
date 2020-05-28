@@ -48,11 +48,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ATM.cs" />
-    <Compile Include="DepositCashForm.cs">
+    <Compile Include="WithdrawalCashForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DepositCashForm.Designer.cs">
-      <DependentUpon>DepositCashForm.cs</DependentUpon>
+    <Compile Include="WithdrawalCashForm.Designer.cs">
+      <DependentUpon>WithdrawalCashForm.cs</DependentUpon>
     </Compile>
     <Compile Include="StartPageForm.cs">
       <SubType>Form</SubType>
@@ -62,8 +62,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DepositCashForm.resx">
-      <DependentUpon>DepositCashForm.cs</DependentUpon>
+    <EmbeddedResource Include="WithdrawalCashForm.resx">
+      <DependentUpon>WithdrawalCashForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartPageForm.resx">
       <DependentUpon>StartPageForm.cs</DependentUpon>

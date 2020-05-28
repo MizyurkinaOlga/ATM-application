@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace ATM_App
 {
-    public partial class Form1 : Form
+    public partial class DepositCashForm : Form
     {
-        public Form1()
+        public DepositCashForm()
         {
             InitializeComponent();
+        }
+
+        private void returnToStart_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            StartPageForm startPage = new StartPageForm();
+            startPage.Show();
         }
     }
 }
